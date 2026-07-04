@@ -5,7 +5,7 @@ from langchain_core.prompts import PromptTemplate
 
 class MissionCommanderAgent:
     def __init__(self, api_key=None):
-        self.api_key = api_key or "AQ.Ab8RN6LWvqCXvo29f6ZsLCsbGyMlYsyT61oq9094P2IbR0XLzg"
+        GOOGLE_API_KEY = ""
         self.llm = ChatGoogleGenerativeAI(
             model="gemini-1.5-pro", 
             google_api_key=self.api_key,

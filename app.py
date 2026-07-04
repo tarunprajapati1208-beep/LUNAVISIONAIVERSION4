@@ -330,7 +330,7 @@ elif menu_option == "🤖 AI Analytics":
 elif menu_option == "📋 Executive Reports":
     st.markdown("<div class='header-card'><h1>📋 Command Briefing & Export</h1></div>", unsafe_allow_html=True)
     st.markdown("### 🤖 LLM Mission Commander (Gemini Pro)")
-    API_KEY = "AQ.Ab8RN6LWvqCXvo29f6ZsLCsbGyMlYsyT61oq9094P2IbR0XLzg"
+    API_KEY = os.getenv("GOOGLE_API_KEY", "")
     if st.button("Generate Secure Mission Briefing"):
         with st.spinner("Encrypting space packets..."):
             try:
